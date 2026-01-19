@@ -19,7 +19,7 @@ with st.form("loan_form"):
     col1, col2 = st.columns(2)
     with col1:
         age = st.number_input("Age (person_age)", min_value=18, max_value=100, value=25)
-        income = st.number_input("Annual Income (person_income)", min_value=0, value=50000)
+        income = st.number_input("Monthly Income (person_income)", min_value=0, value=50000)
         gender = st.selectbox("Gender (person_gender)", ["male", "female"])
     with col2:
         education = st.selectbox("Education Level (person_education)", ["Bachelor", "Master", "High School", "Associate", "Doctorate"])
