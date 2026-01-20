@@ -32,7 +32,7 @@ with st.form("loan_form"):
         loan_amnt = st.number_input("Loan Amount (loan_amnt)", min_value=500, value=10000)
         loan_intent = st.selectbox("Loan Intent", ["PERSONAL", "EDUCATION", "MEDICAL", "VENTURE", "DEBTCONSOLIDATION", "HOMEIMPROVEMENT"])
     with col4:
-        loan_int_rate = st.number_input("Interest Rate (%)", min_value=0.0, value=11.0, step=0.1)
+        loan_int_rate = st.number_input("Interest Rate (%)", min_value=0.0, value=14.0, step=0.1)
         prev_default = st.selectbox("Previous Default on File?", ["No", "Yes"])
     
     credit_score = st.number_input("Credit Score", min_value=300, max_value=850, value=650)
